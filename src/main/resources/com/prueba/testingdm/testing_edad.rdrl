@@ -1,0 +1,9 @@
+package com.prueba.testingdm;
+
+import java.lang.Number;
+
+rule "testing_edad"
+	dialect "mvel"
+	when
+	then
+end
