@@ -1,13 +1,41 @@
 <scenario>
-  <name>testing_edad_TS</name>
+  <name>testing_edad_TS.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
-  <fixtures/>
+  <fixtures>
+    <fact-data>
+      <type>persona</type>
+      <fieldData>
+        <field-data>
+          <name>edad</name>
+          <value>20</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>p</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <execution-trace/>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>edad</fieldName>
+          <expected>20</expected>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>persona</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
+  </fixtures>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.prueba.testingdm</packageName>
   <imports>
     <imports/>
   </imports>
-  <ksessions/>
+  <ksessions>
+    <string>defaultKieSession</string>
+  </ksessions>
 </scenario>
