@@ -7,7 +7,7 @@
   <version>1.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
   <name>testingDM</name>
-  <description>testingDM</description>
+  <description>Proyecto testing motor de reglas.</description>
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>
