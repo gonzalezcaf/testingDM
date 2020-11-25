@@ -6,12 +6,35 @@ package com.prueba.testingdm;
 
 public class persona implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public persona() {
-    }
+	@org.kie.api.definition.type.Label(value = "Nombre")
+	private java.lang.String nombre;
+	@org.kie.api.definition.type.Label(value = "Edad")
+	private java.lang.Integer edad;
 
+	public persona() {
+	}
 
+	public java.lang.String getNombre() {
+		return this.nombre;
+	}
 
+	public void setNombre(java.lang.String nombre) {
+		this.nombre = nombre;
+	}
+
+	public java.lang.Integer getEdad() {
+		return this.edad;
+	}
+
+	public void setEdad(java.lang.Integer edad) {
+		this.edad = edad;
+	}
+
+	public persona(java.lang.String nombre, java.lang.Integer edad) {
+		this.nombre = nombre;
+		this.edad = edad;
+	}
 
 }
